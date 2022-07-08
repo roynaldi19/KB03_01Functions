@@ -1,16 +1,15 @@
-fun fishFood(day: String) : String {
-    var food = ""
-    when(day) {
-        "Monday" -> food = "flakes"
-        "Tuesday" -> food = "pellets"
-        "Wednesday" -> food = "redworms"
-        "Thursday" -> food = "granules"
-        "Friday" -> food = "mosquitoes"
-        "Saturday" -> food = "plankton"
-        "Sunday" -> food = "shrimp"
+fun fishFood (day : String) : String {
+    val food : String = when (day) {
+        "Monday" -> "flakes"
+        "Wednesday" -> "redworms"
+        "Thursday" -> "granules"
+        "Friday" -> "mosquitoes"
+        "Sunday" -> "plankton"
+        else -> "nothing"
     }
     return food
 }
+
 
 fun feedTheFish2() {
     val day = randomDay()
